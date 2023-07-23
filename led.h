@@ -1,3 +1,4 @@
+
 #include <Adafruit_NeoPixel.h>
 #ifdef __AVR__
 #include <avr/power.h>  // Required for 16 MHz Adafruit Trinket
@@ -18,19 +19,19 @@ void setupled() {
 
 
 
-  setled(0, 0, 22.9);
+  setled(0, 0, 22.9); //blue
   delay(1000);
-  setled(0, 22.9, 0);
+  setled(0, 22.9, 0); //green
   delay(1000);
-  setled(25.5, 25.5, 1);
+  setled(25.5, 25.5, 1); //red and green low intensity
   delay(1000);
-  setled(25.5, 12.7, 0);
+  setled(25.5, 12.7, 0); // red and green moderate intensity
   delay(1000);
-  setled(22.9, 0, 0);
+  setled(22.9, 0, 0); //red
   delay(1000);
-  setled(15.3, 1, 7.8);
+  setled(15.3, 1, 7.8); // red and blue low intensity
   delay(1000);
-  setled(12.7, 2, 3.6);
+  setled(12.7, 2, 3.6); //red and blue very low intensity
 }
 
 void setled(int R, int G, int B) {
